@@ -2,11 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Your project description here.">
-  <meta name="keywords" content="Your, Keywords, Here">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Project Title</title>
+  <title>Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -48,15 +45,17 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Your Project Title</h1>
+          <h1 class="title is-1 publication-title">Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="#">Author Name</a><sup>1</sup></span>
+              <a href="#">Till Hielscher</a><sup>1</sup></span>
+              <a href="#">Fabio Scaparro</a><sup>1</sup></span>
+              <a href="#">Kai O. Arras</a><sup>1</sup></span>
             <!-- Add more authors here -->
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Your Institution</span>
+            <span class="author-block"><sup>1</sup>Socially Intelligent Robotics Lab, University of Stuttgart, Germany</span>
           </div>
 
           <div class="column has-text-centered">
@@ -80,16 +79,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="#"
@@ -97,18 +86,19 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (DMP Basis [IROS'25])</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
+              <!-- Supplemental Material Link. -->
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Supplemental Material</span>
                   </a>
+              
             </div>
 
           </div>
@@ -121,71 +111,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Teaser description
+      <img src="./static/images/teaser.png" alt="Teaser" style="width: 80%; height: auto; display: block; margin: 0 auto;"/>
+      <h2 class="subtitle has-text-centered" style="width: 80%; margin: 0 auto;">
+        Addressing the "what" and the "how" of expressive robot motion for context-aware interactive behavior.
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -199,155 +128,217 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Abstract
+            Expressive robot motion positively impacts human-robot interaction by improving user engagement, likability, or task performance. We present a novel approach to automatically generate and modulate complex, expressive full-body gesture sequences from a multimodal (text, audio, video) context description. Based on a unified mathematical implementation of the Principles of Animation using Dynamic Movement Primitives, we use multimodal foundation models to generate such sequences along with parametric motion variations that are highly context-aware. This method extends the state of the art in terms of flexibility and generality by being interpretable, composable, and working across different robot morphologies. Moreover, we integrate the system into a continuous control framework and leverage knowledge distillation to learn a much smaller model, significantly improving token efficiency and system latency. Results from a user study with a human-like platform indicate that participants judged our system’s motions to be better aligned with the interaction context than motions produced under a non-modulated or API-level motion behavior condition. We also demonstrate how the system can be used to generate expressive motion for robots with different kinematics, showcasing its versatility.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
 
+<!-- Method Section -->
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Section Title</h2>
-          <p>
-            Your content description here.
-          </p>
-          <video id="video1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/your-video.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Section Title</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Your content description here.
-            </p>
-            <video id="video2" controls playsinline height="100%">
-              <source src="./static/videos/your-video.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Subsection Title</h3>
-        <div class="content has-text-justified">
-          <p>
-            Your subsection description here.
-          </p>
+        <h2 class="title is-3">Method</h2>
+        
+        <!-- Main Image Display -->
+        <div class="has-text-centered" style="margin-bottom: 30px;">
+          <img id="method-image" 
+               src="./static/images/method_overall.png" 
+               alt="Method Overview" 
+               style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+
+        <!-- Tab Buttons -->
+        <div class="method-buttons has-text-centered" style="margin-bottom: 30px;">
+          <button class="button is-rounded method-btn is-active" data-tab="overall">
+            Overall
+          </button>
+          <button class="button is-rounded method-btn" data-tab="input">
+            Inputs
+          </button>
+          <button class="button is-rounded method-btn" data-tab="inference">
+            Generation and Modulation
+          </button>
+          <button class="button is-rounded method-btn" data-tab="timeline">
+            Timeline
+          </button>
+        </div>
+
+        <!-- Description Content -->
+        <div class="method-descriptions">
+          <div id="overall-desc" class="method-description is-active">
+            <div class="content has-text-justified">
+              <p>
+                Our method generates and modules expressive motion behavior for robots based on inputs from multiple context description modalities and a specification of robot data. The motion is excuted based on a timeline of individual primitives.
+              </p>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Subsection Title</h3>
-        <div class="content has-text-justified">
-          <p>
-            Your subsection description here.
-          </p>
+          <div id="input-desc" class="method-description">
+            <div class="content has-text-justified">
+              <p>
+                Multimodal context descriptions can be provided with text, video and audio modalities. The modalities must be interpretable by foundation models, which extract relevant contextual features. Additionally real-time data from the robots sensors or external sources can be provided as a basis for continuous modulation. Besides the context, the method requires a specification of robot data. This includes a library of motion primitives, that are learned with Dynamic Movement Primitives, as well as the robots capabilities and kinematics, which bound and guide the modulation of the motion.
+              </p>
+            </div>
+          </div>
+
+          <div id="inference-desc" class="method-description">
+            <div class="content has-text-justified">
+              <p>
+                The inference for the generation and modulation is trained with knowledge distillation based on a multi-stage teacher pipeline. The systems reasoning is based on a high level sequence generation and a low level modulation generation. With the call results the individual motion primitives are modulated with parameters that are projected to the provided robots capabilities. The distilled foundation model offers significantly improved inference times which are crucial for the system reactivity.
+              </p>
+            </div>
+          </div>
+
+          <div id="timeline-desc" class="method-description">
+            <div class="content has-text-justified">
+              <p>
+                The timeline coordinates the execution of the infividual motion primitives. It ensures smooth transitions between the primitives as well as continuous operation. It also enables modulation during execution to adapt to real-time changes in the context (e.g. gaze tracking a moving person).
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            Add your related work and links here.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
+<!--/ Method Section -->
+
+
+<!-- Context-Awareness -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Context-Awareness</h2>
+        
+        <!-- Main Video Display -->
+        <div class="has-text-centered" style="margin-bottom: 30px;">
+          <div style="width: 50%; margin: 0 auto; aspect-ratio: 1/1; background: #f5f5f5; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+            <video id="context-video" autoplay loop muted playsinline
+                   style="width: 100%; height: 100%; object-fit: contain;">
+              <source src="./static/videos/context_tab1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Tab Buttons -->
+        <div class="context-buttons has-text-centered" style="margin-bottom: 30px;">
+          <button class="button is-rounded context-btn is-active" data-tab="tab1">
+            Context 1
+          </button>
+          <button class="button is-rounded context-btn" data-tab="tab2">
+            Context 2
+          </button>
+          <button class="button is-rounded context-btn" data-tab="tab3">
+            Context 3
+          </button>
+          <button class="button is-rounded context-btn" data-tab="tab4">
+            Context 4
+          </button>
+        </div>
+
+        <!-- Description Content -->
+        <div class="context-descriptions">
+          <div id="tab1-desc" class="context-description is-active">
+            <div class="content has-text-justified">
+              <p>
+                <strong>Textual modality:</strong> "A person approaches and greets the robot, then asks for directions and an explanation. The robot knows that the destination is to its left. The robot's energy level is very low."
+              </p>
+            </div>
+          </div>
+
+          <div id="tab2-desc" class="context-description">
+            <div class="content has-text-justified">
+              <p>
+                <strong>Video modality:</strong> The image of a person who appears happy. <strong>Audio modality:</strong> A person saying "[Hi! It’s amazing to see you. It’s been so long]. <strong>Textual modality:</strong> "Person recognition module: Right camera detected a person, well known, last seen 7 months ago. Microphone: recorded audio."
+              </p>
+            </div>
+          </div>
+
+          <div id="tab3-desc" class="context-description">
+            <div class="content has-text-justified">
+              <p>
+                <strong>Textual modality:</strong> "A person walks past the robot. The person is busy and in a hurry."
+              </p>
+            </div>
+          </div>
+
+          <div id="tab4-desc" class="context-description">
+            <div class="content has-text-justified">
+              <p>
+                <strong>Audio modality:</strong> The sound of a person "[knocking]" on a door. <strong>Textual modality:</strong> "The robot is engaged in a discussion with a person. It is also anticipating the arrival of a second person. An open door is located to the left."
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Context-Aware Motion Behavior Section -->
+
+
+<!-- Cross-Morphology Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Cross-Morphology</h2>
+
+        <div class="content has-text-centered">
+          <p>
+            Generated motion behavior for the context: "A person familiar to the robot approaches from its right side. The robot hasn’t seen this person in a long time, and the person is clearly excited to meet the robot again."
+          </p>
+        </div>
+        
+        <!-- Main Video Display -->
+        <div class="has-text-centered" style="margin-bottom: 30px;">
+          <div style="width: 50%; margin: 0 auto; aspect-ratio: 1/1; background: #f5f5f5; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+            <video id="morphology-video" autoplay loop muted playsinline
+                   style="width: 100%; height: 100%; object-fit: contain;">
+              <source src="./static/videos/morphology_robot1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Tab Buttons -->
+        <div class="morphology-buttons has-text-centered" style="margin-bottom: 30px;">
+          <button class="button is-rounded morphology-btn is-active" data-tab="robot1">
+            Pepper
+          </button>
+          <button class="button is-rounded morphology-btn" data-tab="robot2">
+            Go2
+          </button>
+          <button class="button is-rounded morphology-btn" data-tab="robot3">
+            Gen3 Lite
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Cross-Morphology Section -->
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{yourpaper2024,
-  author    = {Your Name},
-  title     = {Your Paper Title},
-  journal   = {Conference/Journal Name},
-  year      = {2024},
+    <pre><code>@inproceedings{hielscher2024context,
+  author    = {Hielscher, Till and Scaparro, Fabio and Arras, Kai O.},
+  title     = {Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models},
+  journal   = {ACM/IEEE International Conference on Human-Robot Interaction (HRI)},
+  year      = {2026},
 }</code></pre>
   </div>
 </section>
@@ -368,13 +359,10 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
+            Website template adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Website template adapted from <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>

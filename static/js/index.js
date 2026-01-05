@@ -75,4 +75,67 @@ $(document).ready(function() {
 
     bulmaSlider.attach();
 
+    // Method section button functionality
+    $('.method-btn').on('click', function() {
+      var target = $(this).data('tab');
+      
+      // Remove active class from all buttons and descriptions
+      $('.method-btn').removeClass('is-active');
+      $('.method-description').removeClass('is-active');
+      
+      // Add active class to clicked button and corresponding description
+      $(this).addClass('is-active');
+      $('#' + target + '-desc').addClass('is-active');
+      
+      // Update the main image
+      $('#method-image').attr('src', './static/images/method_' + target + '.png');
+      $('#method-image').attr('alt', 'Method: ' + target.charAt(0).toUpperCase() + target.slice(1));
+    });
+
+    // Context-Aware Motion Behavior section button functionality
+    $('.context-btn').on('click', function() {
+      var target = $(this).data('tab');
+      
+      // Remove active class from all buttons and descriptions
+      $('.context-btn').removeClass('is-active');
+      $('.context-description').removeClass('is-active');
+      
+      // Add active class to clicked button and corresponding description
+      $(this).addClass('is-active');
+      $('#' + target + '-desc').addClass('is-active');
+      
+      // Update the video source
+      var video = $('#context-video')[0];
+      var currentSrc = './static/videos/context_' + target + '.mp4';
+      if (video.querySelector('source').src !== currentSrc) {
+        video.querySelector('source').src = currentSrc;
+        video.load();
+        video.play();
+      }
+    });
+
+    // Cross-Morphology section button functionality
+    $('.morphology-btn').on('click', function() {
+      var target = $(this).data('tab');
+      
+      // Remove active class from all buttons and descriptions
+      $('.morphology-btn').removeClass('is-active');
+      $('.morphology-description').removeClass('is-active');
+      
+      // Add active class to clicked button and corresponding description
+      $(this).addClass('is-active');
+      $('#' + target + '-desc').addClass('is-active');
+      
+      // Update the video source
+      var video = $('#morphology-video')[0];
+      var currentSrc = './static/videos/morphology_' + target + '.mp4';
+      if (video.querySelector('source').src !== currentSrc) {
+        video.querySelector('source').src = currentSrc;
+        video.load();
+        video.play();
+      }
+    });
+
 })
+
+
